@@ -1,10 +1,12 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://assets/Fonts/tutorial 6.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scenes/LoseScreen.gd" type="Script" id=2]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
@@ -16,12 +18,25 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -927.0
-margin_top = -126.0
-margin_right = 927.0
-margin_bottom = 126.0
+margin_left = -933.0
+margin_top = -131.0
+margin_right = 921.0
+margin_bottom = 121.0
 custom_fonts/font = ExtResource( 1 )
 text = "yah kasian
 masa gitu doang
 kalah"
 align = 1
+
+[node name="StartBtn" type="Button" parent="ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -86.0
+margin_top = 186.0
+margin_right = 62.0
+margin_bottom = 206.0
+text = "Back to Main Menu"
+
+[connection signal="pressed" from="ColorRect/StartBtn" to="." method="_on_StartBtn_pressed"]

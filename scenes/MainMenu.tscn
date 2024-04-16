@@ -21,10 +21,16 @@ margin_right = 148.0
 margin_bottom = 20.0
 text = "Start"
 
-[node name="QuitBtn" type="Button" parent="VBoxContainer"]
+[node name="LevelBtn" type="Button" parent="VBoxContainer"]
 margin_top = 24.0
 margin_right = 148.0
 margin_bottom = 44.0
+text = "Level Select"
+
+[node name="QuitBtn" type="Button" parent="VBoxContainer"]
+margin_top = 48.0
+margin_right = 148.0
+margin_bottom = 68.0
 text = "Quit"
 
 [node name="Label" type="Label" parent="."]
@@ -38,4 +44,5 @@ text = "Alien di Pacil
 (gacor kang)"
 
 [connection signal="pressed" from="VBoxContainer/StartBtn" to="." method="_on_StartBtn_pressed"]
+[connection signal="pressed" from="VBoxContainer/LevelBtn" to="." method="_on_LevelBtn_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitBtn" to="." method="_on_QuitBtn_pressed"]
