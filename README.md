@@ -22,3 +22,15 @@ Latihan: Clickable Menu
 1. Buat Script dan sambungkan dengan Node "MainMenu" yang telah dibuat pada Latihan Membuat Menu Utama
 2. Kirim signal dari button yang diinginkan ke Script di MainMenu untuk melakukan perintah load scene apabila tombol ditekan
 
+Latihan: Membuat GUI Life Counter
+1. Buat global variable terlebih dahulu dengan cara, membuat sebuah script dan menjadikannya global variable dari Project Setting
+2. Buat scene Life Counter. berisikan node `User Interface` sebagai root dan `Label` sebagai child. Gunakan custom font yang telah dibuat pada Label (step seperti pada latihan di atas)
+3. Jadikan scene "LifeCounter" sebagai child dari CanvasLayer pada scene Level1
+4. Kemudian, ubah sedikit AreaTrigger pada Level1 agar dapat bertindak sebagai counter dan dapat mengubah global variable
+
+Latihan: Membuat Layar Game Over
+1. Buat sebuah node baru untuk LoseScreen
+2. Jadikan sebuah node "User Interface" sebagai root
+3. Jadikan sebuah node ColorRect sebagai child dari User Interface agar dapat lebih berwarna~
+4. Tambahkan label sebagai child dari ColorRect. Dan ubah font style seperti sebelumnya :D
+5. Ubah script pada AreaTrigger di Level1 agar me-refer ke LoseScreen apabila counter telah mencapai 0
