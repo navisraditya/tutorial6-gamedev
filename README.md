@@ -34,3 +34,14 @@ Latihan: Membuat Layar Game Over
 3. Jadikan sebuah node ColorRect sebagai child dari User Interface agar dapat lebih berwarna~
 4. Tambahkan label sebagai child dari ColorRect. Dan ubah font style seperti sebelumnya :D
 5. Ubah script pada AreaTrigger di Level1 agar me-refer ke LoseScreen apabila counter telah mencapai 0
+
+Latihan Mandiri
+A. Tombol balik ke Main Menu setelah kalah
+    1. Tambahkan button sebagai child dari ColorRect pada scene LoseScreen
+    2. Buat script pada node User Interface di scene LoseScreen
+    3. setup signal dari Button ke script dan jangan lupa refer scene MainMenu apabila tombol ditekan
+B. Membuat Tombol level selection
+    1. Buat scene yang berisikan dua buat button untuk melanjutkan kepada level 1 dan level 2
+    2. Pada MainMenu, tambahkan satu button lagi untuk masuk ke scene LevelSelect
+    3. Pada scene LevelSelect, lakukan sama seperti tutorial sebelumnya di mana kita melakukan setup untuk button agar bisa berfungsi dengan baik dan mengganti scene ke scene yang kita ingin
+C. Layar Transisi
