@@ -11,3 +11,14 @@ Latihan: Membuat Menu Utama
 4. Tambahkan 2 Button untuk memulai permainan dan keluar dari permainan
 
 Latihan: Membuat Custom Fonts
+1. Tekan tombol `Create new resource` yang ada pada Inspector
+2. Cari DynamicFont
+3. Di bawah menu `Font`, masukkan file dengan format .tff pada Font Data untuk menambahkan font baru
+4. Ubah beberapa setting yang diinginkan
+5. Simpan font baru dengan format .tres (pada tutorial kali ini, file font baru diberi nama "tutorial 6.tres")
+6. Untuk menggunakan font yang sudah disimpan dapat dilakukan dengan cara melakukan load terhadap file .tres yang telah dibuat pada menu Theme Override pada label
+
+Latihan: Clickable Menu
+1. Buat Script dan sambungkan dengan Node "MainMenu" yang telah dibuat pada Latihan Membuat Menu Utama
+2. Kirim signal dari button yang diinginkan ke Script di MainMenu untuk melakukan perintah load scene apabila tombol ditekan
+
